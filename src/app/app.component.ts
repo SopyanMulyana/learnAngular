@@ -6,26 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./componenstyle.css']
 })
 export class AppComponent  { 
-  show: boolean = true;
-
-  persons: any[] = [
-    {
-      ID: 1,
-      name: 'Sopyan Mulyana',
-      email: 'sopyan.mulyana@mitrais.com',
-      age: 23
-    },
-    {
-      ID: 2,
-      name: 'Daniel Muliawan',
-      email: 'daniel.muliawan@mitrais.com',
-      age: 33
-    },
-    {
-      ID: 3,
-      name: 'Wisesa Fentika',
-      email: 'wisessa.fentika@mitrais.com',
-      age: 31
-    }
-  ]
 }

@@ -1,14 +1,14 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';  //import a forms module
 
 import { AppComponent }  from './app.component';
-import { ProfileComponent }  from './profilecomponent';
-
+import { ProfileFormComponent }  from './profile-form.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule, FormsModule ], //add a forms module
   declarations: [ AppComponent,
-                 ProfileComponent ],
+                 ProfileFormComponent ], 
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
