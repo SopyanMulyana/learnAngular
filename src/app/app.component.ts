@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CountService } from "./count.services";
 
 @Component({
   selector: 'my-app', //tag to use in index html
@@ -6,4 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./componenstyle.css']
 })
 export class AppComponent  { 
+    constructor(private hasil: CountService){}
+    a: number;
+    b: number;
+    result: number;
+    onSubmit(): void {
+        this.result = this.hasil.hitung(this.a, this.b);
+    }
 }

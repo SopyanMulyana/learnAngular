@@ -1,2 +1,14 @@
-<h3>Here is form</h3>
-<profile-form>disini profil form</profile-form>
+<form (ngSubmit)="onSubmit()" #profileForm="ngForm">
+        <div>
+          <label for = "a">A</label>
+          <input type = "text" id = "a" [(ngModel)] = "this.a" name = "a">
+       </div>
+       <div>
+          <label for = "b">B</label>
+          <input type = "text" id = "b" [(ngModel)] = "this.b" name = "b">
+       </div>
+       <button type="submit" class="btn btn-success">Submit</button>
+</form>
+    <div>
+        <p>{{this.result}}</p>
+    </div>
