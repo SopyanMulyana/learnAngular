@@ -1,2 +1,25 @@
-<h1>Hello world</h1>
-<my-profile>disini profil</my-profile>
+<h3>ngIf example</h3>
+<p *ngIf="show">Here is table</p>
+<hr>
+<h3>ngFor example</h3>
+<table>
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Status</th>
+    </tr>
+</thead>
+<tbody *ngFor="let person of persons"> 
+    <tr>
+       <td>{{person.ID}}</td> 
+       <td>{{person.name}}</td>
+       <td>{{person.email}}</td>
+       <td>{{person.age}}</td>
+       <td *ngIf="person.age > 30">Old</td>
+       <td *ngIf="person.age <= 30">Young</td>
+    </tr> 
+</tbody>
+</table>
